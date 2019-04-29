@@ -1,8 +1,9 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('dieroller').then(function(cache) {
+    caches.open('PWA').then(function(cache) {
       return cache.addAll([
-        'index.html',
+				'index.html',
+				'favicon.ico',
 				'styles/main.css',
 				'scripts/main.js'
 			]);
