@@ -27,13 +27,13 @@
   <body>
     <div id="main">
       <h1>PWA Starter by J-P Losier</h1>
-	  	<p>This is still an empty PWA. </p>
+	  	<p>This is an empty PWA. </p>
     </div>
     <p id="load">Loading&hellip;</p>
 
     <script>
      /*
-	 document.addEventListener('DOMContentLoaded', function() {
+	    document.addEventListener('DOMContentLoaded', function() {
         
         try {
          
@@ -43,9 +43,14 @@
           document.getElementById('load').innerHTML = 'Error loading';
         }
       });
-	  */
-	  document.getElementById('load').innerHTML = '';
-	  	  
+	    */
+      document.getElementById('load').innerHTML = '';
+      /*
+      console.log('protocol is ' + location.protocol);
+      console.log('location is ' + location.hostname + ':' + location.port + location.pathname + location.search);
+      if(location.protocol=='http:'){
+        document.location='https://' + location.hostname + ':' + location.port + location.pathname + location.search;
+      }*/
     </script>
 	<script>
 		if ('serviceWorker' in navigator) {
@@ -59,6 +64,7 @@
 			});
 		  });
 		}
-	</script>
+  </script>
+  <script src="scripts/main.js" defer></script>
   </body>
 </html>
