@@ -5,7 +5,8 @@ self.addEventListener('install', function(e) {
 				'index.html',
 				'favicon.ico',
 				'styles/main.css', 
-				'scripts/main.js'
+				'scripts/main.js',
+				'scripts/localforage.min.js'
 			]);
 		})
 	);

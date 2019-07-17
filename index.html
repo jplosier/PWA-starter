@@ -6,11 +6,13 @@
     <title>PWA Consultant Calculator</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#3367D6"/>
-  	<meta name="Description" content="PWA Consultant Calculator by J-P Losier.">
+    <meta name="Description" content="PWA Consultant Calculator by J-P Losier.">
+    <link rel="icon" sizes="192x192" href="images/icons-192.png">
+    <link rel="apple-touch-icon" href="images/icons-192.png">
     <!-- These styles should be the barest minimum to allow the page to initially render without shifting as it loads. -->
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #main { background: white; padding: 32px 24px; border-radius: 3px; }
+      #main { background: white; padding: 12px 12px; border-radius: 3px; }
 	   
       #load { color: black; text-align: center; font-size: 13px; }
 
@@ -36,18 +38,18 @@
       <div class="calculator">
         <label for="prod_subtotal" class="lcol">Product Subtotal:</label>
         <div class="rcol">
-          $<input type="number" class="rcol" id="prod_subtotal" name="prod_subtotal" value="100.00" />
+          $<input type="number" class="rcol" id="prod_subtotal" name="prod_subtotal" value="0.00" />
         </div>
       
         <div class="lcol">
-          Shipping:
+          <label for="ship_rate">Shipping:</label>
           <input type="number" class="lcol" id="ship_rate" name="ship_rate" value="5"/>
           %
         </div>
         <span class="rcol" id="ship_total">$0.00</span>
         
         <div class="lcol">
-          Handling: $
+          <label for="hand_fee">Handling:</label> $
           <input type="number" class="lcol" id="hand_fee"name="hand_fee" value="5" />
         </div>
         <span class="rcol" id="hand_total">$5.00</span>
@@ -59,7 +61,7 @@
         <input type="checkbox" id="tax_shipping" name="tax_shipping" checked />
         
         <div class="lcol">
-          Sales Tax: 
+          <label for="tax_rate">Sales Tax:</label> 
           <input type="number" class="lcol" name="tax_rate" id="tax_rate" value="8.25" />
           %
         </div>
@@ -69,7 +71,7 @@
         <strong><span class="rcol" id="grand_total">$0.00</span></strong>
         
         <div class="lcol">
-          Commission: 
+          <label for="comm_rate">Commission:</label> 
           <input type="number" class="lcol" name="comm_rate" id="comm_rate" value="25"/>
           %
         </div>
@@ -116,6 +118,7 @@
 		  });
 		}
   </script>
+  <script src="scripts/localforage.min.js"></script>
   <script src="scripts/main.js" defer></script>
   </body>
 </html>
