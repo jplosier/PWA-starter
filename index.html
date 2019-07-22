@@ -16,6 +16,7 @@
 	   
       #load { color: black; text-align: center; font-size: 13px; }
 
+      h1 { font-size:170%; background-color:#3367D6; }
       .calculator { 
         display: grid; 
         grid-template-columns: 70% 25%;
@@ -24,7 +25,9 @@
       }
       .row { border: 1px solid red; }
       .lcol { text-align:right; }
-      input.rcol { width:85%; }
+      input.lcol { width:50%; margin:0.5em 0; }
+      input.rcol { width:60%; margin:0.5em 0;}
+      .big { font-size:150%; }
       button { padding:1em; text-align:center; margin-top:1em; }
     </style>
     <link rel="style" href="styles/main.css"/>
@@ -36,23 +39,23 @@
       <h1>PWA Consultant Calculator</h1>
       <h2>by J-P Losier</h2>
       <div class="calculator">
-        <label for="prod_subtotal" class="lcol">Product Subtotal:</label>
-        <div class="rcol">
-          $<input type="number" class="rcol" id="prod_subtotal" name="prod_subtotal" value="0.00" />
+        <label for="prod_subtotal" class="lcol big">Product Subtotal:</label>
+        <div class="rcol big">
+          $<input type="number" class="rcol" id="prod_subtotal" name="prod_subtotal" value="" />
         </div>
       
         <div class="lcol">
           <label for="ship_rate">Shipping:</label>
-          <input type="number" class="lcol" id="ship_rate" name="ship_rate" value="5"/>
+          <input type="number" class="lcol" id="ship_rate" name="ship_rate" value=""/>
           %
         </div>
         <span class="rcol" id="ship_total">$0.00</span>
         
         <div class="lcol">
           <label for="hand_fee">Handling:</label> $
-          <input type="number" class="lcol" id="hand_fee"name="hand_fee" value="5" />
+          <input type="number" class="lcol" id="hand_fee"name="hand_fee" value="" />
         </div>
-        <span class="rcol" id="hand_total">$5.00</span>
+        <span class="rcol" id="hand_total">$0.00</span>
         
         <label for="subtotal" class="lcol">Subtotal:</label>
         <span class="rcol" id="subtotal">$0.00</span>
@@ -62,13 +65,13 @@
         
         <div class="lcol">
           <label for="tax_rate">Sales Tax:</label> 
-          <input type="number" class="lcol" name="tax_rate" id="tax_rate" value="8.25" />
+          <input type="number" class="lcol" name="tax_rate" id="tax_rate" value="" />
           %
         </div>
         <span class="rcol" id="tax_total">$0.00</span>
         
-        <label for="grand_total" class="lcol"><strong>Gand Total:</strong></label>
-        <strong><span class="rcol" id="grand_total">$0.00</span></strong>
+        <label for="grand_total" class="lcol big"><strong>Gand Total:</strong></label>
+        <strong><span class="rcol big" id="grand_total">$0.00</span></strong>
         
         <div class="lcol">
           <label for="comm_rate">Commission:</label> 

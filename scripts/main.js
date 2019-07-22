@@ -118,6 +118,7 @@ function set(id, text) {
 
 function money(number) {
   d(1, 'money();  // start');
+  if (!number) number = 0;
   return '$' + number.toFixed(2);
   d(1, 'money();  // end');
 };  // money();
