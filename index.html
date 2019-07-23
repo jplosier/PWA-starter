@@ -3,31 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PWA Consultant Calculator</title>
+    <title>PWA Starter</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#3367D6"/>
-    <meta name="Description" content="PWA Consultant Calculator by J-P Losier.">
-    <link rel="icon" sizes="192x192" href="images/icons-192.png">
-    <link rel="apple-touch-icon" href="images/icons-192.png">
+  	<meta name="Description" content="PWA Starter by J-P Losier.">
     <!-- These styles should be the barest minimum to allow the page to initially render without shifting as it loads. -->
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #main { background: white; padding: 12px 12px; border-radius: 3px; }
+      #main { background: white; padding: 32px 24px; border-radius: 3px; }
 	   
       #load { color: black; text-align: center; font-size: 13px; }
-
-      h1 { font-size:170%; background-color:#3367D6; }
-      .calculator { 
-        display: grid; 
-        grid-template-columns: 70% 25%;
-        grid-column-gap: 1em;
-        grid-auto-flow: row;
-      }
-      .lcol { text-align:right; }
-      input.lcol { width:6em; margin:0.5em 0; }
-      input.rcol { width:6em; margin:0.5em 0;}
-      .big { font-size:150%; }
-      button { padding:1em; text-align:center; margin-top:1em; }
+     
     </style>
     <link rel="style" href="styles/main.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -35,56 +21,10 @@
   </head>
   <body>
     <div id="main">
-      <h1>PWA Consultant Calculator</h1>
-      <h2>by J-P Losier</h2>
-      <button id="butInstall">Install</button>
-      <div class="calculator">
-        <label for="prod_subtotal" class="lcol big">Product Subtotal:</label>
-        <div class="rcol big">
-          $<input type="number" class="rcol" id="prod_subtotal" name="prod_subtotal" value="" />
-        </div>
-      
-        <div class="lcol">
-          <label for="ship_rate">Shipping:</label>
-          <input type="number" class="lcol" id="ship_rate" name="ship_rate" value=""/>
-          %
-        </div>
-        <span class="rcol" id="ship_total">$0.00</span>
-        
-        <div class="lcol">
-          <label for="hand_fee">Handling:</label> $
-          <input type="number" class="lcol" id="hand_fee"name="hand_fee" value="" />
-        </div>
-        <span class="rcol" id="hand_total">$0.00</span>
-        
-        <label for="subtotal" class="lcol">Subtotal:</label>
-        <span class="rcol" id="subtotal">$0.00</span>
-        
-        <label for="tax_shipping" class="lcol">Tax Shipping:</label>
-        <input type="checkbox" id="tax_shipping" name="tax_shipping" checked />
-        
-        <div class="lcol">
-          <label for="tax_rate">Sales Tax:</label> 
-          <input type="number" class="lcol" name="tax_rate" id="tax_rate" value="" />
-          %
-        </div>
-        <span class="rcol" id="tax_total">$0.00</span>
-        
-        <label for="grand_total" class="lcol big"><strong>Gand Total:</strong></label>
-        <strong><span class="rcol big" id="grand_total">$0.00</span></strong>
-        
-        <div class="lcol">
-          <label for="comm_rate">Commission:</label> 
-          <input type="number" class="lcol" name="comm_rate" id="comm_rate" value="25"/>
-          %
-        </div>
-        <span class="rcol" id="comm_total">$0.00</span>
-
-        <button class="primary" name="Calculate" id="calculate"><strong>Calculate</strong></button>
-        <button class="warning" name="Reset" id="reset">Reset</button>
-      </div>
-      <!--<p>These are icons: <i class="material-icons">get_app</i> <i class="material-icons">menu</i></p>-->
-    
+      <h1>PWA Starter by J-P Losier</h1>
+      <p>This is an empty PWA. </p>
+      <p>These are icons: <i class="material-icons">get_app</i> <i class="material-icons">menu</i></p>
+    </div>
     <p id="load">Loading&hellip;</p>
 
     <script>
@@ -122,7 +62,6 @@
 		}
   </script>
   <script src="scripts/localforage.min.js"></script>
-  <script src="/scripts/install.js"></script>
   <script src="scripts/main.js" defer></script>
   </body>
 </html>

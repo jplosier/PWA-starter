@@ -1,6 +1,6 @@
 {
-  "short_name": "PWAConsultantCalculator",
-  "name": "PWA Consultant Calculator",
+  "short_name": "PWAStarter",
+  "name": "PWA Starter",
   "icons": [
     {
       "src": "/images/icons-192.png",
