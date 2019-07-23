@@ -25,7 +25,6 @@ function makeReloadButton(){
   oReload.className = "material-icons";
   oReload.text = 'refresh';
   oReload.href = location.href + '?' + Math.random();
-
   document.body.appendChild(oReload);
   d(1, 'makeReloadButton();  // end');
 };   //  makeReloadButton();

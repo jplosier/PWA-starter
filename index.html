@@ -23,10 +23,9 @@
         grid-column-gap: 1em;
         grid-auto-flow: row;
       }
-      .row { border: 1px solid red; }
       .lcol { text-align:right; }
-      input.lcol { width:50%; margin:0.5em 0; }
-      input.rcol { width:60%; margin:0.5em 0;}
+      input.lcol { width:6em; margin:0.5em 0; }
+      input.rcol { width:6em; margin:0.5em 0;}
       .big { font-size:150%; }
       button { padding:1em; text-align:center; margin-top:1em; }
     </style>
@@ -38,6 +37,7 @@
     <div id="main">
       <h1>PWA Consultant Calculator</h1>
       <h2>by J-P Losier</h2>
+      <button id="butInstall">Install</button>
       <div class="calculator">
         <label for="prod_subtotal" class="lcol big">Product Subtotal:</label>
         <div class="rcol big">
@@ -122,6 +122,7 @@
 		}
   </script>
   <script src="scripts/localforage.min.js"></script>
+  <script src="/scripts/install.js"></script>
   <script src="scripts/main.js" defer></script>
   </body>
 </html>
