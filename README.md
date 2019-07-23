@@ -1,4 +1,17 @@
-# PWA-starter
-A basic valid Progressive Web App (PWA) skeleton to use to start a PWA project.
+# PWA-Consultant-Calculator
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/91ef52f1-cb8e-48cd-8aee-74611b0a4f5c/deploy-status)](https://app.netlify.com/sites/jplosier-pwa-starter/deploys)
+A simple PWA-based clone of an app called "Consultant Calculator" that, given a subtotal, calculates preset shipping, handling, sales tax, grand total, and commission.
+
+This is a project to hone my skills at PWA development, and put practical products to work using the PWA Starter, showing where it needs to be improved.
+
+## User Features
+
+* Persistent storage of defined shipping rate, handling fee, sales tax, and  commission rate.
+* Simple interface.
+* No ads.
+* No internet connection needed, except to update PWA.
+
+## Development Notes
+
+* Used LocalForage for LocalStorage wrapper.
+* Implements Promises.
